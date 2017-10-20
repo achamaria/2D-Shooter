@@ -5,7 +5,7 @@ using UnityEngine;
 public class BulletController : MonoBehaviour {
     //public variables
     [SerializeField]
-    float xSpeed = 2f;
+    float xSpeed = 1f;
     [SerializeField]
     float yPos;
 
@@ -22,13 +22,9 @@ public class BulletController : MonoBehaviour {
     // resetting the object
     public void Reset()
     {
-
         _currentSpeed = new Vector2(xSpeed, 0);
-       
-
     }
-
-
+    
     // Update is called once per frame
     void Update()
     {

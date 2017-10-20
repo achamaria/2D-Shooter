@@ -27,7 +27,7 @@ public class EnemyController : MonoBehaviour {
     // resetting the object
     public void Reset()
     {
-        _currentSpeed = new Vector2(xSpeed, 0);
+        _currentSpeed = new Vector2(Random.Range(xSpeed, xSpeed+1.7f), 0);
         _transform.position = new Vector2(82, yPos);
     }
 

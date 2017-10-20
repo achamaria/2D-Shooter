@@ -1473,6 +1473,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114602320034453322, guid: 526a14c5f9be74a4ab6241f7bc9e2017,
+        type: 2}
+      propertyPath: xSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 526a14c5f9be74a4ab6241f7bc9e2017, type: 2}
   m_IsPrefabParent: 0
@@ -1681,7 +1686,7 @@ Prefab:
     - target: {fileID: 114197730528977428, guid: 25fa16db8ef1f1a4ab5a99d684243846,
         type: 2}
       propertyPath: xSpeed
-      value: 0.9
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 25fa16db8ef1f1a4ab5a99d684243846, type: 2}

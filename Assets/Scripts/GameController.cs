@@ -86,7 +86,7 @@ public class GameController : MonoBehaviour {
     private IEnumerator AddEnemy()
     {
 
-        int time = Random.Range(10, 15);
+        int time = Random.Range(5, 10);
         yield return new WaitForSeconds((float)time);
         Instantiate(enemy1);
         Instantiate(enemy2);

@@ -81,18 +81,18 @@ public class PlayerController : MonoBehaviour {
             Instantiate(bullet)
                 .GetComponent<Transform>()
                 .position = new Vector2(_currentPos.x + 30, _currentPos.y - 4);
-            Delay();
+            Delay(2f);
         }
 
             CheckBounds(); //function to check the player boundry of the screen
         _transform.position = _currentPos;
     }
 
-    IEnumerator Delay()
+    IEnumerator Delay(float delay)
     {
-        yield return new WaitForSeconds(2f);    //Wait 2 seconds
-       
+        yield return new WaitForSeconds(delay);
     }
+
 
     //reset player position
     public void Reset()
