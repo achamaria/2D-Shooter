@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/*COMP3064 CRN13899 Assignment 1  
+Akash Chamaria  - 101024951   
+Friday, October 20, 2017                    
+Instructor: Przemyslaw Pawluk*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
