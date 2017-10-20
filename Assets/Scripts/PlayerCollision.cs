@@ -32,6 +32,10 @@ public class PlayerCollision : MonoBehaviour {
         if (other.gameObject.tag.Equals("enemy")) //if collided element is with the tag "enemy"
         {
             Debug.Log("Collision enemy\n");
+            if (_explosionSound != null)
+            {
+                _explosionSound.Play();
+            }
             //instantiating explosion
             Instantiate(explosion)
                 .GetComponent<Transform>()

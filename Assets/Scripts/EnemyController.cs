@@ -11,7 +11,7 @@ public class EnemyController : MonoBehaviour {
 
     [SerializeField]
     GameObject explosion;
-
+    private AudioSource _explosionSound;
     private Transform _transform;
     private Vector2 _currentSpeed;
     private Vector2 _currentPosition;
@@ -20,6 +20,7 @@ public class EnemyController : MonoBehaviour {
     void Start()
     {
         _transform = gameObject.GetComponent<Transform>(); //getting the object
+        _explosionSound = gameObject.GetComponent<AudioSource>();
         Reset(); // resetting the object
     }
 
@@ -51,7 +52,10 @@ public class EnemyController : MonoBehaviour {
         if (other.gameObject.tag.Equals("bullet"))
         {
             Debug.Log("Collision bullet\n");
-
+            if (_explosionSound != null)
+            {
+                _explosionSound.Play();
+            }
             Instantiate(explosion)
                 .GetComponent<Transform>()
                 .position = other.gameObject
